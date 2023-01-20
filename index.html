@@ -38,15 +38,15 @@
 	<div class="marshall-container">
 		<div class="marshall-col-6 marshall-col-content">
 			<div class="marshall-logo">
-				<img src="images/za-logo.png" alt="Marshall Logo">
+				<img src="images/logo2-1.png" alt="Marshall Logo">
 			</div>
 			<div class="marshall-content jquery-center">
 				<h2 class="special_title fadeIn fast">Our new website is almost ready</h2>
 				<section class="cd-intro">
 					<h1 class="cd-headline clip is-full-width">
 						<span class="cd-words-wrapper">
-							<b class="is-visible">Almost There</b>
-							<b>Coming Soon</b>
+							<b class="is-visible">Change is coming</b>
+							<!-- <b>Coming Soon</b> -->
 							<b>Stay Tuned</b>
 						</span>
 					</h1>
@@ -69,7 +69,7 @@
 			</div>
 		</div>
 		<div class="marshall-col-6 marshall-col-screen display_in_mobile">
-			<div id="marshall-animate-area" data-hide="mrs-scaleDown" class="marshall-single-fit-thumb marshall-animate-content marshall-animate-content mrs-active marshall-fit-column" style="background-image: url(images/IMG_0392.jpg);">
+			<div id="marshall-animate-area" data-hide="mrs-scaleDown" class="marshall-single-fit-thumb marshall-animate-content marshall-animate-content mrs-active marshall-fit-column bg-image-ch" >
 				<div class="marshall-simple-content css-center marshall-content">
 					<h2 class="single_large_title big_title fadeIn fast">Launch In</h2>
 					<h2 class="single_large_title fadeIn medium" id="countdown_text_layout"></h2>
@@ -78,6 +78,60 @@
 			</div>
 		</div>
 	</div>
+
+
+	<script>
+
+		function changebg(){
+
+		const images = ['url("/images/IMG_0392.jpg")', 
+		'url("/images/4A3A3608.jpg")', 
+		'url("/images/298222760_575336614088145_976777245187930686_n.jpg")']
+
+		const section = document.getElementById("marshall-animate-area")
+		const bg = images[ Math.floor(Math.random() * images.length)];
+		section.style.backgroundImage = bg;
+
+		}
+
+		setInterval(changebg, 3000)
+	</script>
+
+
+
+
+	<script>
+
+// var rotate = false;
+// function setbackground(){
+//   window.setTimeout( "setbackground()", 5000);
+//   newImage = rotate ? 'url(https://unsplash.com/photos/lCr4rh9y4gE)' : 'url(https://unsplash.com/photos/zfmwdfeRppM)';
+//   rotate = !rotate;
+//   document.getElementById('#marshall-animate-area').style.backgroundImage = newImage;
+// }
+
+		// Image changing Js 
+
+		// var counter=0;
+		// var colours=['images/IMG_0392.jpg', 'images/v10/fashion.jpg'];
+
+		// $(function() {
+		// 	change();
+
+		// 	function change() {
+		// 	setTimeout(change,5000);
+			
+		// 	$("#marshall-animate-area").css('background-image', url(colours[counter])  );
+			
+		// 	counter++;
+			
+		// 	if(counter==3){ counter=0;}
+		// 	}
+		// });
+
+
+
+	</script>
 	
 
 	<!-- All marshall js files -->
@@ -90,6 +144,9 @@
 	<script type="text/javascript" src="js/v10/textanime.js"></script>
 	<script type="text/javascript" src="js/v10/simplyCountdown.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
 	
 </body>
 

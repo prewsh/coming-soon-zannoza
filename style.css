@@ -567,10 +567,18 @@ body.mrs-white .morph-button-modal-2 .morph-content {
 }
 
 .butn{
-background: black;
+background: #8f31cf;
 color: white;
 border: none;
 padding: 7px;
+}
+
+
+#marshall-animate-area{
+  background: url(/images/IMG_0392.jpg), linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 
